@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    /* position */
+    position: absolute;
+
+    /* taille */
+    width: 100%;
+    top: 30%;
+
+    /* texte */
+    font-size: 250%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+    /* bandeau */
+    transform: skewY(9deg);
+    background-image: linear-gradient(90deg, rgba(124, 121, 114, .8), rgba(219, 196, 142, .8), rgba(202, 148, 20, .8) 80%);
+    border-style: dashed none;
+    border-color: black;
+}

@@ -1,0 +1,44 @@
+/* Code dans html */
+
+.python {
+    background-color: yellow;
+}
+
+.C {
+    background-color: blue;
+}
+
+
+.pin {
+    background-color: beige;
+    font-weight: bold;
+}
+
+.new {
+    background-color: aliceblue;
+    font-style: italic;
+}
+
+/* pre */
+
+#arbre {
+    max-width: 100%;
+    margin-right: 5%;
+    overflow-x: scroll;
+}
+
+/* espacement avec tiret */
+
+hr {
+    margin: 5%;
+}
+
+/* a */
+
+a[href="../index.html"] {
+    color: orchid;
+}
+
+a[href="https://linserv-info-03.campus.unice.fr/~lb102183/R102/"] {
+    color: darkmagenta;
+}

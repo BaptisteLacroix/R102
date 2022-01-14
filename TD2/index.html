@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix">
+    <link rel="stylesheet" type="text/css" href="./css/td2.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/td.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Mon TD N°2 </title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="drop-0" class="toggle"><img id="iconeMenu" class="active active2" src="../img/menuIcon3.png"
+                                                        width="225" height="225" alt="Menu Icon"></label>
+                <a href="../index.html">Home</a>
+                <input type="checkbox" id="drop-0"/>
+                <ul class="menu1">
+                    <li>
+                        <label for="drop-1" class="toggle">TD0</label>
+                        <a href="../index.html">TD0</a>
+                        <input type="radio" id="drop-1" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../index.html#html">HTML et CSS</a></li>
+                            <li><a href="../index.html#listes">Sommaire</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2" class="toggle">TD1</label>
+                        <a href="../TD1/index.html">TD1</a>
+                        <input type="radio" id="drop-2" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD1/index.html#balisesTexte">URL et URI</a></li>
+                            <li><a href="../TD1/index.html#insertionImage">Les différents formats d'image sur le web</a>
+                            </li>
+                            <li><a href="../a_propos.html#creerLiens">Insertion d'une image</a></li>
+                            <li><a href="../index.html#listes">Les listes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3" class="toggle">TD2</label>
+                        <a href="../TD2/index.html">TD2</a>
+                        <input type="radio" id="drop-3" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD2/index.html#fonctionnementCSS">Fonctionnement de CSS</a></li>
+                            <li><a href="../TD2/index.html#famille">Noeuds Parents Fils</a></li>
+                            <li><a href="../TD2/index.html#selecteurs_avances">Sélecteurs avancés</a></li>
+                            <li><a href="../TD2/index.html#Regles_priorite">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4" class="toggle">TD3</label>
+                        <a href="../TD3/index.html">TD3</a>
+                        <input type="radio" id="drop-4" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD3/galerie.html">Galerie</a></li>
+                            <li><a href="../TD3/index.html#modele_de_boite">Le modèle de boîte</a></li>
+                            <li><a href="../TD3/index.html#Placement">Placement</a></li>
+                            <li><a href="../TD3/index.html#Complements_boites">Compléments sur les boîtes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-5" class="toggle">TD4</label>
+                        <a href="../TD4/index.html">TD4</a>
+                        <input type="radio" id="drop-5" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD4/index.html#tableaux">Les tableaux</a></li>
+                            <li><a href="../TD4/index.html#balises_multimedia">Les balises multimédia</a></li>
+                            <li><a href="../TD4/index.html#images_sectorisees">Les images sectorisées</a></li>
+                            <li><a href="../TD4/index.html#les_formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-6" class="toggle">TD5</label>
+                        <a href="../TD5/index.html">TD5</a>
+                        <input type="radio" id="drop-6" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/index.html#requetes">Réactivité : les requêtes media</a></li>
+                            <li><a href="../TD5/index.html#police">Mais que fait la police ?</a></li>
+                            <li><a href="../TD5/index.html#motifs">Dégradés et motifs</a></li>
+                            <li><a href="../TD5/index.html#transformations">Transformations et animations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-7" class="toggle">Voiture</label>
+                        <a href="../TD5/voiture.html">Voiture</a>
+                        <input type="radio" id="drop-7" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/voiture.html">Voiture</a></li>
+                            <li><a href="../TD5/voitureAnimee.html">Voiture Animée</a></li>
+                        </ul>
+                    </li>
+                    <li id="apropos">
+                        <label for="drop-8" class="toggle">&#192; Propos</label>
+                        <a href="../a_propos.html">&#192; Propos</a>
+                        <input type="radio" id="drop-8" name="menuResponsive"/>
+                        <ul class="menu2" id="apropos_sous_menu">
+                            <li><a href="../a_propos.html#creerLiens">Changer de type de boîte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="content">
+        <h1>CSS3: Et la couleur fut !</h1>
+        <section>
+            <h2 id="fonctionnementCSS">Fonctionnement de CSS</h2>
+            <h3>À quoi correspond rgb(120, 56, 13) en hexadécimal ?</h3>
+            <ul>
+                <li>
+                    <p>#78380d</p>
+                </li>
+            </ul>
+            <h3>Combien de couleurs chacune de ces trois méthodes (rgb, hexa ou nom de couleur) vous permettent
+                d'obtenir
+                ?</h3>
+            <ul>
+                <li>
+                    <p>La méthode nom de couleur permet d'obtenir jusqu'à 140 couleurs.</p>
+                    <p>La méthode RGB permet d'obtenir 16 777 216 couleurs car cette méthode possède des niveaux de
+                        rouge, vert et bleu et chaque niveau est codé par un nombre allant de 0 à 255.</p>
+                    <p>La méthode HEXA permet d'obtenir 16 777 216 couleurs, soit 256^3 combinaisons de couleurs
+                        possibles. Chaque valeur de couleur RR, GG et BB contient 56 valeurs différentes, allant de 00 à
+                        FF.</p>
+                    <p>2<sup>24</sup> = 16 777 216 (Environ 16 Millions)</p>
+                    <p><cite><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></cite></p>
+                </li>
+            </ul>
+            <h3>Comparez en quelques lignes ces méthodes (avantages / inconvénients).</h3>
+            <ul>
+                <li>
+                    <p>Les couleurs quantifiées par leur nom ne sont pas nombreuses à être valide.
+                        Par ailleurs, le hexadecimal et le décimal proposent le même nombre de couleurs,
+                        mais l'hexadecimal peut aussi se représenter sur 4 octet, ce qui permet donc d'obtenir plus de
+                        couleur.<br/>
+                        Enfin, on peut dire que la méthode rgb() est plus lisible pour un humain
+                    </p>
+                    <p><cite><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></cite></p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="famille">Noeuds Parents Fils</h2>
+            <a class="DOM"><img src="img/Capture.PNG" width="731" height="494" alt="Image Capture Exercice"/></a>
+            <h3>Combien cet arbre a-t-il de nœuds de type ELEMENT ? De type TEXT ?</h3>
+            <ul>
+                <li><p>16 noeuds de type ELEMENT. 13 noeuds de type TEXT. Pour un total de 29 Noeuds</p></li>
+            </ul>
+            <h3>Écrire le code HTML correspondant à ce DOM.</h3>
+            <ul>
+                <li>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;fr&quot;&gt;
+
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../css/td.css&quot; /&gt;
+        &lt;title&gt; Mon TD N&deg;1 &lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Les papous&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;h2&gt;D&eacute;finition&lt;/h2&gt;
+                &lt;p&gt;Les &lt;em&gt;papous&lt;/em&gt; sont les habitants de Papouasie.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Classification&lt;/h2&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Les papous papa.&lt;/li&gt;
+                    &lt;li&gt;Les papous pas papa.&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt; Site r&eacute;alis&eacute; par &lt;i&gt;A.Franquin&lt;/i&gt; en partenariat avec &lt;i&gt;G. Levi-Strauss&lt;/i&gt; . &lt;/footer&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+                </code></pre>
+
+                </li>
+            </ul>
+            <h3 id="selecteurs_avances">Quel code CSS peut-on écrire pour, sans toucher au code HTML (pas de classe ou
+                d'identifiant !), mettre un fond rouge à « châtaignes » et un fond cyan à « couverture » (sans changer
+                le
+                reste) ?</h3>
+            <ol>
+                <li>
+                <pre>
+                    <code>
+    li + li + li + li em {
+        background-color: red;
+    }
+                    </code>
+                </pre>
+                </li>
+                <li>
+                <pre>
+                    <code>
+    body > ul > li + li em {
+        background-color: cyan;
+    }
+                    </code>
+                </pre>
+                </li>
+            </ol>
+            <h3>Proposez une feuille de style qui attribue une couleur différent aux liens selon qu'il s'agisse :</h3>
+            <ol>
+                <li>
+                    <a href="../index.html">Lien Interne vers page accueil</a>
+                </li>
+                <li>
+                    <a href="https://linserv-info-03.campus.unice.fr/~lb102183/R102/">Lien externe vers le serveur</a>
+                </li>
+                <li>
+                    <a href="mailto:baptiste&nbsp;lacroix&commat;eut&nbsp;unice&nbsp;fr">Contactez</a>
+                </li>
+            </ol>
+            <h3>Changez la couleur de vos titres lorsqu'ils sont survolés avec la souris.
+                <br/><br/>Quelle est la différence entre p:hover et p :hover ?</h3>
+            <ul>
+                <li>
+                    <p><b>p:hover</b> ciblera le paragraphe p de la page lorsqu'il est survolées.</p>
+                    <p><b>p :hover</b> tous les p de la page sont survolés et tous ce qui est à l'intérieur</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Modifiez votre feuille de style pour que, pour chaque citation, il y ait des guillemets colorés avant et
+                après la citation.
+                <br/><br/>Profitez-en pour appliquer un fond coloré à chaque citation.</h2>
+            <ul>
+                <li>
+                    <q>Citation 1</q>
+                    <br/>
+                    <q>Citation 2</q>
+                    <br/>
+                    <q>Citation 3</q>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="Regles_priorite">Considérons le code HTML suivant:</h2>
+            <a class="DOM"><img src="img/Capture2.PNG" width="715" height="808" alt="Image Capture Exercice"/></a>
+            <ul>
+                <li>
+                    <p>L'élément "Ma page" sera en rouge<br/>
+                        l'élément "Ceci est un paragraphe sera en rose<br/>
+                        l'élément "assez remarquable." sera en marron et en italique<br/>
+                        l'élément "Et que dire de celui-ci ?" sera en bleu.</p>
+                </li>
+                <li>
+                    <hr>
+                    <strong>Solution : </strong>
+                </li>
+            </ul>
+            <a class="DOM"><img src="img/solus.PNG" width="296" height="157" alt="Image Capture Solution Exercice"/></a>
+            <h3>Pour chaque élément, identifiez les règles qui peuvent potentiellement le concerner et classez-les de la
+                plus forte à la faible, en justifiant (calculez la spécificité de chaque sélecteur CSS pour
+                justifier).</h3>
+            <ul>
+                <li>
+                    <ol>
+                        <li>
+                            <code>#intro</code> : <b>(1, 0, 0)</b> est un identifiant et il est le sélecteur qui a la
+                            plus grande spécificité. Il doit donc être placé en premier.<br>
+                        </li>
+                        <li>
+                            La classe et balise <code>p.important</code> : <b>(0, 1, 1)</b> est le second sélecteur
+                            ayant la plus grande spécificité en raison de sa classe et de son element <code>p</code>
+                            .<br>
+                        </li>
+                        <li>
+                            Vient par la suite <code>body .important</code> : <b>(0, 1, 1)</b>, qui lui possède une
+                            classe et un élément <code>body </code>.<br>
+                        </li>
+                        <li>
+                            La balise <code>body </code>: <b>(0, 0, 1)</b> se place en quatrième position en terme de
+                            spécificité puisqu'il ne contient qu'un seul élément.<br>
+                        </li>
+                        <li>
+                            De même pour la balise <code>p </code>: <b>(0, 0, 1)</b> qui ne correspond qu'à un
+                            élement.<br>
+                        </li>
+                        <li>
+                            Enfin, en dernière position, on retrouve la balise <code>* </code>: <b>(0, 0, 0)</b>.<br>
+                        </li>
+                        <li>
+                            Ainsi, tous ces sélecteurs ont été classé du plus important au moins important en respectant
+                            les règles : identifiant > classe > balises.<br>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p><code>#intro</code> -> <code>p.important</code> -> <code>body .important</code> ->
+                        <code>body</code> -> <code>p</code> -> <code>*</code></p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        if (document.querySelector('#drop-0:checked') !== null) {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active')
+            }
+        } else {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active2')
+            }
+        }
+    </script>
+</main>
+<footer>
+    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a> - 14/10/2021</p>
+</footer>
+</body>
+
+</html>

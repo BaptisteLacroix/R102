@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix">
+    <link rel="stylesheet" type="text/css" href="./css/td1.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/td.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Mon TD N°1 </title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="drop-0" class="toggle">
+                    <img id="iconeMenu" class="active active2" src="../img/menuIcon3.png" width="225" height="225"
+                         alt="Menu Icon">
+                </label>
+                <a href="../index.html">Home</a>
+                <input type="checkbox" id="drop-0"/>
+                <ul class="menu1">
+                    <li>
+                        <label for="drop-1" class="toggle">TD0</label>
+                        <a href="../index.html">TD0</a>
+                        <input type="radio" id="drop-1" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../index.html#html">HTML et CSS</a></li>
+                            <li><a href="../index.html#listes">Sommaire</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2" class="toggle">TD1</label>
+                        <a href="../TD1/index.html">TD1</a>
+                        <input type="radio" id="drop-2" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD1/index.html#balisesTexte">URL et URI</a></li>
+                            <li><a href="../TD1/index.html#insertionImage">Les différents formats d'image sur le web</a>
+                            </li>
+                            <li><a href="../a_propos.html#creerLiens">Insertion d'une image</a></li>
+                            <li><a href="../index.html#listes">Les listes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3" class="toggle">TD2</label>
+                        <a href="../TD2/index.html">TD2</a>
+                        <input type="radio" id="drop-3" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD2/index.html#fonctionnementCSS">Fonctionnement de CSS</a></li>
+                            <li><a href="../TD2/index.html#famille">Noeuds Parents Fils</a></li>
+                            <li><a href="../TD2/index.html#selecteurs_avances">Sélecteurs avancés</a></li>
+                            <li><a href="../TD2/index.html#Regles_priorite">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4" class="toggle">TD3</label>
+                        <a href="../TD3/index.html">TD3</a>
+                        <input type="radio" id="drop-4" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD3/galerie.html">Galerie</a></li>
+                            <li><a href="../TD3/index.html#modele_de_boite">Le modèle de boîte</a></li>
+                            <li><a href="../TD3/index.html#Placement">Placement</a></li>
+                            <li><a href="../TD3/index.html#Complements_boites">Compléments sur les boîtes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-5" class="toggle">TD4</label>
+                        <a href="../TD4/index.html">TD4</a>
+                        <input type="radio" id="drop-5" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD4/index.html#tableaux">Les tableaux</a></li>
+                            <li><a href="../TD4/index.html#balises_multimedia">Les balises multimédia</a></li>
+                            <li><a href="../TD4/index.html#images_sectorisees">Les images sectorisées</a></li>
+                            <li><a href="../TD4/index.html#les_formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-6" class="toggle">TD5</label>
+                        <a href="../TD5/index.html">TD5</a>
+                        <input type="radio" id="drop-6" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/index.html#requetes">Réactivité &nbsp;:&nbsp; les requêtes media</a></li>
+                            <li><a href="../TD5/index.html#police">Mais que fait la police ?</a></li>
+                            <li><a href="../TD5/index.html#motifs">Dégradés et motifs</a></li>
+                            <li><a href="../TD5/index.html#transformations">Transformations et animations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-7" class="toggle">Voiture</label>
+                        <a href="../TD5/voiture.html">Voiture</a>
+                        <input type="radio" id="drop-7" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/voiture.html">Voiture</a></li>
+                            <li><a href="../TD5/voitureAnimee.html">Voiture Animée</a></li>
+                        </ul>
+                    </li>
+                    <li id="apropos">
+                        <label for="drop-8" class="toggle">&#192; Propos</label>
+                        <a href="../a_propos.html">&#192; Propos</a>
+                        <input type="radio" id="drop-8" name="menuResponsive"/>
+                        <ul class="menu2" id="apropos_sous_menu">
+                            <li><a href="../a_propos.html#creerLiens">Changer de type de boîte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- <h1>Structuration de la page</h1> -->
+</header>
+<main>
+    <div id="content">
+        <h1>Structuration de la page</h1>
+        <section>
+            <h2 id="balisesTexte">TD 1 - À la découverte de HTML</h2>
+            <ul>
+                <li>
+                    <p>
+                        <q>être ou ne pas être</q>, disait <cite><a
+                            href="https://fr.wikipedia.org/wiki/William_Shakespeare">Shakespeare</a></cite>, <q>voilà la
+                        question</q>.
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><q>Une, <b>URL</b> (sigle de l’anglais&nbsp;:&nbsp; <i>Uniform Resource Locator, littéralement </i>
+                        localisateur uniforme de ressource),
+                        <em>couramment appelée adresse web</em>, est une chaîne de caractères uniforme qui permet
+                        d'identifier une ressource du <b><cite><a href="https://fr.wikipedia.org/wiki/World_Wide_Web">World
+                            Wide Web</a></cite></b> par son emplacement et
+                        de préciser le protocole internet pour la récupérer (par exemple http ou https). Elle peut
+                        localiser divers formats de données&nbsp;:&nbsp;
+                        document HTML, image, son, etc... </q></p>
+                    <p><cite><a href="https://fr.wikipedia.org/wiki/Uniform_Resource_Locator"
+                                target="_blank">Wikipedia</a></cite></p>
+                    <p><q>Un <b>URI</b>, de l'anglais <i>Uniform Resource Identifier</i>, soit littéralement identifiant
+                        uniforme de ressource,
+                        est une courte chaîne de caractères identifiant une ressource sur un réseau (par exemple une
+                        ressource Web) physique ou abstraite,
+                        et dont la syntaxe respecte une norme d'Internet mise en place pour le <b><cite><a
+                                href="https://fr.wikipedia.org/wiki/World_Wide_Web">World Wide Web (voir RFC
+                            3986)&nbsp;</a></cite></b>.
+                        La norme était précédemment connue sous le terme <em>UDI1&nbsp;</em>.</q></p>
+                    <p><cite><a href="https://fr.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="insertionImage">Les différents formats d'images&nbsp;:&nbsp; Matriciels, vectoriels et avec ou sans
+                perte.</h2>
+            <div id="legende">
+                <img id="chien" src="img/Image_de_chien.jpg" width="925" height="617" alt="Image d'un chien"/>
+                <p>Légende&nbsp;:&nbsp; du chien</p>
+            </div>
+            <ol>
+                <li>
+                    <p id="clearLeft">Une <b>image matricielle</b>, ou <b>carte de points</b> (de l'anglais
+                        <i>bitmap</i>), est une image constituée d'une matrice de points colorés.
+                        C'est-à-dire, constituée d'un tableau, d'une grille, où chaque case possède une couleur qui lui
+                        est propre et est considérée comme un point.
+                        Il s'agit donc d'une juxtaposition de points de couleurs formant, dans leur ensemble, une image.
+                    </p>
+                    <p><cite><a href="https://fr.wikipedia.org/wiki/Image_matricielle"
+                                target="_blank">Wikipedia</a></cite></p>
+                </li>
+
+                <li>
+                    <p>Une <b>image vectorielle</b> (ou <b>image en mode trait</b>), en informatique, est une image
+                        numérique composée d'objets géométriques individuels,
+                        des primitives géométriques (segments de droite, arcs de cercle, courbes de Bézier, polygones,
+                        etc.),
+                        définis chacun par différents attributs (forme, position, couleur, remplissage, visibilité, etc.)
+                        et auxquels on peut appliquer différentes transformations
+                        (homothéties, similitude, rotations, écrasement, mise à l'échelle, extrusion, inclinaison, effet
+                        miroir,
+                        dégradé de formes, morphage, symétrie, translation, interpolation, coniques ou bien les formes
+                        de révolution).
+                        Elle se différencie en cela des images matricielles (ou images bitmap), qui sont constituées de
+                        pixels. </p>
+                    <p><cite><a href="https://fr.wikipedia.org/wiki/Image_vectorielle"
+                                target="_blank">Wikipedia</a></cite></p>
+                </li>
+                <li>
+                    <p>La <b>compression d'image</b> est une application de la compression de données sur des images
+                        numériques.
+                        Cette compression a pour utilité de réduire la redondance des données d'une image afin de
+                        pouvoir l'emmagasiner sans occuper beaucoup d'espace ou la transmettre rapidement.
+
+                        La compression d'image peut être effectuée <b>avec perte</b> de données ou <b>sans perte</b>.
+                        La compression sans perte est souvent préférée là où la netteté des traits est primordiale&nbsp;:&nbsp;
+                        schémas, dessins techniques, icônes, bandes dessinées. La compression avec perte, plus
+                        radicale,
+                        est utile pour les transmissions à bas débit, mais dégrade la qualité de l'image restituée.
+                        Les méthodes de compression sans perte sont également préférées là où la précision est vitale&nbsp;:&nbsp;
+                        balayages médicaux ou numérisations d'images pour archivage.
+                        Les méthodes avec perte restent acceptables pour des photos dans les applications où une perte
+                        mineure de fidélité (parfois imperceptible) est tolérée pour réduire les coûts de stockage ou
+                        d'envoi. </p>
+                    <p><cite><a href="https://fr.wikipedia.org/wiki/Compression_d%27image" target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Quelle sont les différences entre les formats PNG, GIF, JPG et SVG&nbsp;?&nbsp;</h2>
+            <ol>
+                <li>
+                    <p>
+                        Le format <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics"
+                                     target="_blank">PNG</a>
+                        ( Portable Network Graphics) est un format ouvert d'images numériques.
+                        Il a été créé initialement pour remplacer le format GIF (Graphics Interchange Format),
+                        qui lui était à l'époque propriétaire et dont la compression était brevetée.
+                    </p>
+                    <p>
+                        <cite><a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics" target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Le format <a href="https://fr.wikipedia.org/wiki/Graphics_Interchange_Format" target="_blank">GIF</a>
+                        a été mis au point en 1987 par le groupe <a href="https://fr.wikipedia.org/wiki/CompuServe"
+                                                                    target="_blank">CompuServe</a>,
+                        dirigé par l'informaticien Steve Wilhite (en), pour permettre le téléchargement d'images en
+                        couleur.
+                        Ce format utilise l'algorithme de compression sans perte <a
+                            href="https://fr.wikipedia.org/wiki/LZW" target="_blank">LZW</a>,
+                        nettement plus efficace que l'algorithme <a
+                            href="https://fr.wikipedia.org/wiki/Run-length_encoding" target="_blank">RLE</a>
+                        utilisé par la plupart des formats alors disponibles (<a
+                            href="https://fr.wikipedia.org/wiki/PCX" target="_blank">PCX</a>, <a
+                            href="https://fr.wikipedia.org/wiki/ILBM" target="_blank">ILBM</a>
+                        puis <a href="https://fr.wikipedia.org/wiki/Windows_bitmap" target="_blank">BMP</a>).
+                    </p>
+                    <p>
+                        <cite><a href="https://fr.wikipedia.org/wiki/Graphics_Interchange_Format" target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+                <li>
+                    <p>Le format <a href="https://developer.mozilla.org/fr/docs/Web/Media/Formats/Image_types#jpeg"
+                                    target="_blank">JPG ou JPEG</a>
+                        est un bon choix pour les images compressées avec pertes. C'est le format le plus
+                        populaire et parmi les mieux pris en charge.
+                        PNG sera préférable si on préfère une meilleure fidélité à l'image et WebP/AVIF permettront
+                        d'avoir de meilleurs taux de compression.
+                    <p>
+                        <cite><a href="https://developer.mozilla.org/fr/docs/Web/Media/Formats/Image_types#jpeg"
+                                 target="_blank">MDN web docs</a></cite>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Le format <a href="https://developer.mozilla.org/fr/docs/Web/Media/Formats/Image_types#svg"
+                                     target="_blank">SVG</a>
+                        est un format d'image vectorielle basé sur XML pour les graphiques bidimensionnels avec prise en
+                        charge de l'interactivité et de l'animation.
+                        La spécification SVG est un standard ouvert développé par le <a
+                            href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">World Wide Web
+                        Consortium (W3C)</a>
+                        depuis 1999.
+                        C'est un format d'image vectoriel idéal pour les éléments d'interface utilisateur, les icônes ou
+                        diagrammes qui nécessitent de s'afficher précisément quelle que soit l'échelle.
+                    </p>
+                    <p>
+                        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
+                                 target="_blank">MDN web docs</a></cite> /
+                        <cite><a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics"
+                                 target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Pour quel usage est conseillé chaque format ?</h2>
+            <ul>
+                <li>
+                    <p>
+                        Il est conseillé d'utiliser le format png pour les photos et les visuels riches en couleur,<br>
+                        le format gif pour les images animées colorées,<br>
+                        le format png pour les graphiques, icônes et logos simples <br>
+                        et le format svg pour les images vectorisées, afin de ne pas perdre de qualité lors d'un
+                        changement de format.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>De nouveaux formats d'images ont vu le jour récemment&nbsp;:&nbsp; leurs points forts et leurs points faibles.</h2>
+            <ul>
+                <li>
+                    <ol>
+                        <li>
+                            <p>
+                                Le nouveau format <a href="https://fr.wikipedia.org/wiki/JPEG_2000" target="_blank">JPEG2000</a>
+                                est une nouvelle norme de compression d'images avec ou sans perte de données.
+                                Son point faible est qu'il est incompatible avec le format JPEG. JPEG2000 était breveté
+                                par la société texane Forgent Networks jusqu'en 2006, mais le brevet a expiré.
+                                Aujourd'hui, le format n'est pas breveté.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#webp"
+                                    target="_blank">WebP</a>
+                                est un format d'image matricielle développé et mis à disposition du public par <a
+                                    href="https://en.wikipedia.org/wiki/Google" target="_blank">Google</a>.
+                                C'est un excellent choix pour les images statiques ou animées. Les taux de
+                                compression de ce format sont meilleurs que pour PNG ou JPEG.
+                                Ce format prend également en charge de meilleures profondeurs pour les couleurs, les
+                                frames animées, la transparence, etc.
+                                On l'utilise dans le but de conserver une bonne qualité d'image tout en réduisant leur
+                                poids de 25%. Son point faible est que ce format est déconseillé pour l'archivage.
+                                Il est disponible sur différents supports (Linux, Windows 10, MacOs, iOS et Android)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#apng"
+                                    target="_blank">APNG</a>
+                                Bon choix pour les animations sans perte de qualité. AVIF et WebP ont de
+                                meilleures performances mais une moins bonne couverture des navigateurs.
+                                L’APNG a besoin d’être optimisé.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a href="https://en.wikipedia.org/wiki/JPEG_XR" target="_blank">JPEG-XR</a>
+                                a été développé par Windows et sert à améliorer la précision des couleurs JPG pour avoir
+                                une meilleure compression.
+                                Son point faible est qu'il contient des pertes de détails fins lors de la compression.
+                                Ce format n'est supporté par tous les navigateurs web.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a href="https://en.wikipedia.org/wiki/Better_Portable_Graphics"
+                                             target="_blank">BPG</a>
+                                est un format basé sur la compression avec ou sans perte. Le but de ce format est
+                                de remplacer le format <a href="https://en.wikipedia.org/wiki/JPEG"
+                                                          target="_blank">JPEG</a>
+                                grâce à des meilleurs taux de compression et grâce à sa qualité d'image.
+                                Bien qu'il n'y ait pas de support natif intégré pour BPG dans les navigateurs grand
+                                public,
+                                les sites Web peuvent toujours fournir des images BPG à tous les navigateurs en incluant
+                                une bibliothèque JavaScript écrite par
+                                <cite><a href="https://bellard.org/bpg/" target="_blank">Bellard</a></cite>
+                                Son point faible est que la compression est très lente.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a href="https://en.wikipedia.org/wiki/JPEG_XR" target="_blank">FLIF</a>
+                                est un format d'image sans perte qui prétend surpasser PNG, WebP sans perte, BPG sans
+                                perte et JPEG sans perte 2000 en termes de taux de compression sur une variété d'entrées.
+                                il est destiné à être libre, sans perte et gratuit. Ce format n'a pas de brevet
+                                mais ne peut pas encore être utilisé sur différents navigateurs.
+                                FLIF n'est plus en cours de développement.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a href="https://en.wikipedia.org/wiki/JPEG_XR" target="_blank">JPEGXL</a>
+                                est un format de fichier graphique libre de droits qui prend en charge la compression
+                                avec et sans perte.
+                                Il est conçu pour surpasser les formats raster existants et ainsi devenir leur
+                                remplacement universel.
+                                Il devient de plus en plus compatible avec les supports d'aujourd'hui, il est encore en
+                                développement.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Le format <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#avif"
+                                    target="_blank">AVIF</a>
+                                est fomat de fichier graphique spécialisé dans le stockage d'images ou de séquences
+                                compréssé avec AV1 dans le HEIF format conteneur.
+                                Il est en compétition avec <cite><a
+                                    href="https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format"
+                                    target="_blank">HEIC</a></cite>
+                                qui utilise le même stockage de format. La version 1 de AVIF a été finalisé en
+                                Février 2019.
+                                Ce format est libre de droits mais son point faible est qu'il est encore en
+                                développement.
+                                C'est un format avec de bonnes performances et sans licence commerciale qui peut être
+                                utilisé pour les images statiques comme animées.
+                                Il offre une meilleure compression que PNG et JPEG et une meilleure profondeur de
+                                couleur. Il est préférable d'utiliser des formats alternatifs via l'élément
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+                                   target="_blank"><code>&#x3C;picture&#x3E;</code></a>
+                                pour s'adapter aux différentes prises en charge des navigateurs.
+                            </p>
+                        </li>
+                    </ol>
+                    <p>
+                        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
+                                 target="_blank">MDN web docs</a></cite>&nbsp;/&nbsp;
+                        <cite><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></cite>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="lien">En Général vaut-il mieux utiliser <code>"_blank"</code> ou <code>"_self"</code> comme valeur
+                de
+                target (et pourquoi &nbsp;?&nbsp;)</h2>
+            <ul>
+                <li>
+                    <p>
+                        Il vaut mieux utiliser<code> "_blank" </code>car cela permet d'accéder à une autre page web sans
+                        perdre celle actuelle, cela évitera de surcharger l'onglet actuel
+                        et il est plus simple de revenir sur l'ancienne page si celle si s'ouvre dans un autre onglet.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Y'a t-il des exeptions &nbsp;?&nbsp; Lesquelles et pourquoi &nbsp;?&nbsp;</h2>
+            <ul>
+                <li>
+                    <p>
+                        On peut également spécifier un nom personnalisé &nbsp;:&nbsp; tous les liens qui ont pour cible ce même nom
+                        s'ouvriront dans un même onglet.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const activeClassName = (document.querySelector('#drop-0:checked') !== null) ? 'active1' : 'active2'
+        const clique = document.getElementById('iconeMenu');
+        clique.onclick = function () {
+            clique.classList.toggle(activeClassName)
+        }
+    </script>
+</main>
+<footer>
+    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a> - 14/10/2021</p>
+</footer>
+</body>
+</html>

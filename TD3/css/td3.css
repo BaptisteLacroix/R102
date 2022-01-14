@@ -1,0 +1,79 @@
+/* html */
+
+
+/* main */
+
+/*
+main {
+    width: 80%;
+    min-width: 500px;
+    max-width: 1000px;
+}
+*/
+
+/* Titres */
+
+/*
+
+h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ */
+
+/* Infobulle */
+
+h1.infobulle > span {
+    display: none;
+    max-width: 50%;
+    background-color: #fcf9d9;
+    position: static;
+    box-shadow: 10px 10px 10px gray;
+    margin: auto;
+    padding: 1px;
+    border-radius: 15px;
+    text-align: center;
+    color: red;
+}
+
+
+h1.infobulle:hover > span {
+    display: block;
+}
+
+h2.infobulle > span {
+    display: none;
+    max-width: 50%;
+    background-color: #fcf9d9;
+    position: absolute;
+    box-shadow: 10px 10px 10px gray;
+    margin: auto;
+    padding: 1px;
+    border-radius: 15px;
+    text-align: center;
+    color: red;
+}
+
+
+h2.infobulle:hover > span {
+    display: block;
+}
+
+
+/* Images */
+
+a.DOM {
+    text-align: center;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+a.DOM {
+    padding-left: 10%;
+    text-align: center;
+    display: block;
+}
+

@@ -1,0 +1,407 @@
+/* HTML */
+
+/* main */
+
+main ul {
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* ******** */
+/* tableau1 */
+/* ******** */
+
+#tableau1 {
+    background: white;
+    caption-side: bottom;
+    width: auto;
+    margin: 15px auto auto;
+}
+
+#tableau1 > thead > tr > th {
+    background-color: salmon;
+}
+
+/* entete */
+
+#tableau1 > thead > tr > th {
+    color: white;
+    padding: 5px;
+}
+
+#tableau1 > thead > tr > th:first-letter {
+    color: #deb885;
+}
+
+td {
+    width: auto;
+    height: auto;
+    min-height: 20px;
+    padding: 10px 15px;
+}
+
+/* lignes impaires */
+
+#tableau1 > tbody > tr:nth-child(2n+1) > td {
+    background-color: #f8ebd7;
+}
+
+/* lignes paires */
+
+#tableau1 > tbody > tr:nth-child(2n) > td {
+    background-color: #fff8dc;
+}
+
+/* arrondie */
+
+
+#tableau1 > thead > tr > th:first-child {
+    border-top-left-radius: 2em;
+}
+
+#tableau1 > thead > tr > th:last-child {
+    border-top-right-radius: 2em;
+}
+
+#tableau1 > tbody > tr:nth-last-child(1) > td:first-child {
+    border-bottom-left-radius: 2em;
+}
+
+#tableau1 > tbody > tr:last-child > td:last-child {
+    border-bottom-right-radius: 2em;
+}
+
+/* première colonne */
+
+#tableau1 > tbody > tr > td:first-child {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+#tableau1 > tbody > tr > td:first-child::first-letter {
+    color: #B02121;
+}
+
+/* deuxième colonne */
+
+#tableau1 > tbody > tr > td:nth-child(0n+2) {
+    font-style: italic;
+}
+
+#tableau1 > tbody > tr > td:first-child + td + td {
+    text-align: center;
+}
+
+/* dernière colonne */
+
+#tableau1 > tbody > tr > td:last-child::before {
+    content: "✆ ";
+    color: #E0BB8A;
+    font-size: 1.5em;
+}
+
+/* légende */
+
+caption {
+    font-variant: small-caps;
+    color: gray;
+}
+
+
+/* Tableau1 Responsive */
+@media screen and (max-width: 767px) {
+    /* Responsive 1er tableau */
+    #tableau1 {
+        caption-side: bottom;
+        width: 98%;
+        margin: 15px auto auto;
+        font-size: 3vw;
+    }
+
+    td {
+        width: auto;
+        height: auto;
+        min-height: 5vw;
+        padding: 1vw 0.5vw 1vw 1vw;
+    }
+}
+
+/* video */
+
+video {
+    width: 100%;
+}
+
+/* Carte IUT */
+
+#imgIUT {
+    width: 100%;
+}
+
+img.cadre {
+    margin: 30px auto 60px auto;
+}
+
+/* ******** */
+/* tableau2 */
+/* ******** */
+
+#tableau2 {
+    max-width: 100%;
+    font-family: serif;
+    text-align: center;
+    border-spacing: inherit;
+    margin: 2em auto auto;
+    height: 250px;
+    width: 400px;
+}
+
+
+#tableau2 td {
+    width: 100px;
+    height: 50px;
+}
+
+/*
+    bleu : #0000ff
+    rouge : #f00 
+    beige : #ffbfca
+    vert : #007f00 
+    jaune : #ffff00 
+    orange : #ffa300 
+    gris : #7f7f7f 
+    violet : #7f007f 
+*/
+
+#blue {
+    color: #dfdfff;
+    background: #0000ff;
+}
+
+#red {
+    background: #f00;
+}
+
+#beige {
+    background: #ffbfca;
+}
+
+#green {
+    background: #007f00;
+}
+
+#yellow {
+    background: #ffff00;
+}
+
+#orange {
+    background: #ffa300;
+}
+
+#grey {
+    background: #7f7f7f;
+}
+
+#purple {
+    background: #7f007f;
+}
+
+/* ********** */
+/* Formulaire */
+/* ********** */
+
+/* div */
+
+#formulaire {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 1em;
+}
+
+#form_sans_bouton {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    background: #ffffff;
+    max-width: 350px;
+    border-radius: 4%;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.f1 {
+    border: none;
+}
+
+/* Interieur formulaire */
+
+input[type=text],
+input[type=email],
+input[type=url],
+textarea {
+    background-color: #d3d3d3;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+}
+
+input:focus,
+textarea:focus {
+    background: lightsteelblue;
+}
+
+/* Légende */
+
+legend {
+    text-align: left;
+    border: none;
+}
+
+.infos {
+    text-align: left;
+    background-color: #dddddd;
+}
+
+legend:first-letter {
+    color: rgb(100, 149, 237);
+    font-size: 18px;
+}
+
+legend {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+legend > abbr {
+    color: rgb(173, 183, 196);
+    text-decoration: none;
+}
+
+/* Commentaire */
+
+legend:last-of-type {
+    text-align: left;
+    border: none;
+}
+
+#infos_comm {
+    text-align: left;
+    background-color: #dddddd;
+}
+
+/* Barre de notation formulaire */
+
+input[type="range"] {
+    width: 100%;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    margin: auto auto 5px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: rgb(153, 153, 153);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+    background: rgb(153, 153, 153);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border-color: rgb(173, 173, 173);
+    border-style: solid;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 20px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: rgb(173, 173, 173);
+    border-style: solid;
+}
+
+.backgroundSlider {
+    width: 90%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.slidercontainer::before {
+    position: absolute;
+    content: "-";
+    font-size: 30px;
+    font-weight: bold;
+    top: 53.5%;
+    left: 5%;
+}
+
+.backgroundSlider::after {
+    position: absolute;
+    content: "+";
+    top: 55.5%;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Faire fonctionner sous firefox */
+
+@-moz-document url-prefix() {
+    .slidercontainer::before {
+        position: absolute;
+        content: "-";
+        font-size: 30px;
+        font-weight: bold;
+        top: 53%;
+        left: 5%;
+    }
+    .backgroundSlider::after {
+        position: absolute;
+        content: "+";
+        top: 55.5%;
+        right: 2%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+/* Boutton */
+
+button {
+    background-color: rgb(100, 149, 237);
+    border: none;
+    color: white;
+    padding: 5px 40px;
+    text-decoration: none;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px #888888;
+}
+
+button:hover {
+    box-shadow: none;
+    background-color: deepskyblue;
+}

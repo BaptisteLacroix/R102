@@ -1,0 +1,29 @@
+/* HTML */
+
+/* paragraphe */
+
+#clearLeft {
+    clear: left;
+}
+
+/* image chien */
+
+#legende {
+    position: static;
+    float: right;
+    padding: 20px;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    font-style: italic;
+}
+
+#chien {
+    /*
+    width: 500px;
+    height: 400px;
+    */
+    width: 70%;
+    margin-top: 10%;
+    border-radius: 40%;
+}

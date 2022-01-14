@@ -1,0 +1,306 @@
+/* Font personnalisée */
+
+@font-face {
+    /* On donne un nom à la police : */
+    font-family: "LuxuriousRoman";
+    /* On indique son emplacement sur le serveur : */
+    src: url("../fonts/Luxurious_Toman/LuxuriousRoman-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* html */
+
+/* main */
+
+main {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    /*
+    width: 80%;
+    min-width: 500px;
+    max-width: 1000px;
+    */
+}
+
+/* Titres */
+
+h1 {
+    /*
+    min-width: 500px;
+    max-width: 1000px;
+    */
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: "LuxuriousRoman", sans-serif;
+    border-color: rgb(40, 200, 100);
+    border-style: solid;
+    text-align: center;
+    border-radius: 50px;
+}
+
+h2 {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-color: rgb(40, 200, 100);
+    border-style: solid;
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+h3 {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-color: rgb(40, 200, 100);
+    border-style: groove;
+    text-align: center;
+    border-radius: 50px;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+    color: palegreen;
+}
+
+/* listes */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section > ol > li,
+section > ul > li {
+    color: #000000;
+    background-color: #C4F690;
+    font-family: system-ui, serif;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 0 10% 10% 10%;
+    border-style: groove;
+    border-color: rgba(17, 97, 64, 0.3);
+    border-width: thin;
+    line-height: 170%;
+    list-style-position: outside;
+}
+
+/* Images */
+
+a.DOM {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: contents;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+/* Image Avatar */
+
+.Avatar {
+    max-width: 30%;
+    margin: auto;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 20%;
+}
+
+/* Infobulle pour image */
+
+#infobulle {
+    display: none;
+    background-color: bisque;
+    position: absolute;
+    box-shadow: 10px 10px 10px gray;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: red;
+    align-content: center;
+}
+
+.AvatarHover:hover #infobulle {
+    display: block;
+}
+
+/* html */
+
+/*
+.html {
+    color: blue;
+    background-color: #fcf9d9;
+}
+*/
+
+/* Content */
+
+#content {
+    border-color: rgb(40, 200, 100);
+    border-style: solid;
+    background-color: white;
+    width: 80%;
+    position: static;
+    margin: 50px auto;
+    padding: 1em;
+}
+
+/* pre */
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #C4F690;
+}
+
+/* code */
+
+code {
+    white-space: pre;
+}
+
+/* citation */
+
+cite {
+    background-color: #C4F690;
+}
+
+cite > a {
+    color: black;
+    text-decoration: none;
+}
+
+cite > a:hover {
+    color: red;
+}
+
+q {
+    background-color: aquamarine;
+}
+
+q::before {
+    content: '"';
+    color: red;
+}
+
+q::after {
+    content: '"';
+    color: pink;
+}
+
+/* Paragraphe */
+
+p {
+    margin: 5%;
+    text-align: center;
+    /*
+    color: blue;
+    background-color: #fcf9d9;
+    */
+}
+
+@media screen and (max-width: 700px) {
+    p {
+        text-align: left;
+    }
+
+    main > #content > ol > li,
+    main > #content > ul > li {
+        margin: 5% 0;
+        padding: 5% 0;
+    }
+
+    #content {
+        margin: 10px auto;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+}
+
+
+/* body */
+
+
+body {
+    /* lancement de l'animation du fond */
+    animation: backgrounds 300s infinite linear;
+    /* Couleur des points */
+    --col: rgba(255, 255, 255, .7);
+    /* Background Noir */
+    background-color: black;
+    /* Création de 2 points dont un translucide */
+    background-image: radial-gradient(var(--col), var(--col) 10%, transparent 12%, transparent),
+    radial-gradient(var(--col), var(--col) 20%, transparent 22%, transparent);
+    /* Tous mes 50px répétition */
+    background-size: 50px 50px, 50px 50px;
+    /* Décalage des motifs */
+    background-position: 0 0, 25px 25px;
+}
+
+
+/* Keyframes */
+
+@keyframes backgrounds {
+    0% {
+        background-position: top left
+    }
+
+    50% {
+        background-position: bottom right
+    }
+
+    0% {
+        background-position: top left
+    }
+
+}
+
+/* footer */
+
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: none;
+    color: red;
+}
+
+footer {
+    border-color: rgb(40, 200, 100);
+    border-style: solid;
+    text-align: center;
+    font-family: system-ui, serif;
+    color: black;
+    background-color: white;
+    width: 82%;
+    align-content: center;
+    border-radius: 10px;
+    margin: 2% auto auto;
+}

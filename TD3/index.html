@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix">
+    <link rel="stylesheet" type="text/css" href="../css/td.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/td3.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Mon TD N°3 </title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="drop-0" class="toggle"><img id="iconeMenu" class="active active2" src="../img/menuIcon3.png"
+                                                        width="225" height="225" alt="Menu Icon"></label>
+                <a href="../index.html">Home</a>
+                <input type="checkbox" id="drop-0"/>
+                <ul class="menu1">
+                    <li>
+                        <label for="drop-1" class="toggle">TD0</label>
+                        <a href="../index.html">TD0</a>
+                        <input type="radio" id="drop-1" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../index.html#html">HTML et CSS</a></li>
+                            <li><a href="../index.html#listes">Sommaire</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2" class="toggle">TD1</label>
+                        <a href="../TD1/index.html">TD1</a>
+                        <input type="radio" id="drop-2" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD1/index.html#balisesTexte">URL et URI</a></li>
+                            <li><a href="../TD1/index.html#insertionImage">Les différents formats d'image sur le web</a>
+                            </li>
+                            <li><a href="../a_propos.html#creerLiens">Insertion d'une image</a></li>
+                            <li><a href="../index.html#listes">Les listes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3" class="toggle">TD2</label>
+                        <a href="../TD2/index.html">TD2</a>
+                        <input type="radio" id="drop-3" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD2/index.html#fonctionnementCSS">Fonctionnement de CSS</a></li>
+                            <li><a href="../TD2/index.html#famille">Noeuds Parents Fils</a></li>
+                            <li><a href="../TD2/index.html#selecteurs_avances">Sélecteurs avancés</a></li>
+                            <li><a href="../TD2/index.html#Regles_priorite">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4" class="toggle">TD3</label>
+                        <a href="../TD3/index.html">TD3</a>
+                        <input type="radio" id="drop-4" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD3/galerie.html">Galerie</a></li>
+                            <li><a href="../TD3/index.html#modele_de_boite">Le modèle de boîte</a></li>
+                            <li><a href="../TD3/index.html#Placement">Placement</a></li>
+                            <li><a href="../TD3/index.html#Complements_boites">Compléments sur les boîtes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-5" class="toggle">TD4</label>
+                        <a href="../TD4/index.html">TD4</a>
+                        <input type="radio" id="drop-5" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD4/index.html#tableaux">Les tableaux</a></li>
+                            <li><a href="../TD4/index.html#balises_multimedia">Les balises multimédia</a></li>
+                            <li><a href="../TD4/index.html#images_sectorisees">Les images sectorisées</a></li>
+                            <li><a href="../TD4/index.html#les_formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-6" class="toggle">TD5</label>
+                        <a href="../TD5/index.html">TD5</a>
+                        <input type="radio" id="drop-6" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/index.html#requetes">Réactivité : les requêtes media</a></li>
+                            <li><a href="../TD5/index.html#police">Mais que fait la police ?</a></li>
+                            <li><a href="../TD5/index.html#motifs">Dégradés et motifs</a></li>
+                            <li><a href="../TD5/index.html#transformations">Transformations et animations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-7" class="toggle">Voiture</label>
+                        <a href="../TD5/voiture.html">Voiture</a>
+                        <input type="radio" id="drop-7" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/voiture.html">Voiture</a></li>
+                            <li><a href="../TD5/voitureAnimee.html">Voiture Animée</a></li>
+                        </ul>
+                    </li>
+                    <li id="apropos">
+                        <label for="drop-8" class="toggle">&#192; Propos</label>
+                        <a href="../a_propos.html">&#192; Propos</a>
+                        <input type="radio" id="drop-8" name="menuResponsive"/>
+                        <ul class="menu2" id="apropos_sous_menu">
+                            <li><a href="../a_propos.html#creerLiens">Changer de type de boîte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="content">
+        <h1 class="infobulle">Mise en page: Posons le cadre.
+            <span class="infobulle">je suis caché !</span>
+        </h1>
+        <section>
+            <h2 class="infobulle" id="modele_de_boite">Il y a cependant une différence notable, dès l'origine, entre un
+                traitement de texte classique et un moteur de rendu HTML : c'est la notion de page. Quelle est la
+                différence
+                ? Quelles en sont les conséquences ?
+                <span class="infobulle">mais non !</span>
+            </h2>
+            <ul>
+                <li>
+                    <p>Le traitement de texte dit que les pages sont simplement un endroit pour stocker les boites.<br>
+                        Le moteur de recherche dit que les pages sont des boites qui superposent des autres boites.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle">Si j'écris la règle CSS suivante :
+                <span class="infobulle">on peut me voir !</span>
+            </h2>
+            <a class="DOM"><img src="img/Capture.png" alt="Exemple d'un code css"></a>
+            <ul>
+                <li>
+                    <p>Le titre h1 n'aura pas de bordure car il manque le type de bordure (solid, medium, dotted...) et
+                        par défaut le type de border vaut <code>none</code>.<br>
+                        Il n'y aura donc rien qui s'affichera à l'écran.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle">Quels avantages y a-t-il à utiliser une taille absolue ? Une taille relative ?
+                <span class="infobulle">Ca sert vraiment a quelque chose de me regarder ?</span>
+            </h2>
+            <ul>
+                <li>
+                    <blockquote>
+                        <strong>Unités de longueur absolue</strong>
+                        <p>La plupart de ces unités sont utiles pour l'impression plutôt que pour l'affichage sur un
+                            écran. Ainsi, on n'utilise généralement pas <code>cm</code> (centimètres) sur un écran.</p>
+                        <strong>Unités de longueur relative</strong>
+                        <p>Les unités de longueur relative permettent d'exprimer des quantités relatives à quelque chose
+                            d'autre comme la taille de la police de l'élément parent ou la taille de la zone d'affichage
+                            (<i lang="en">viewport</i>). L'avantage d'utiliser des unités relatives est qu'avec un peu
+                            d'organisation, on peut faire que la taille du texte ou d'autres éléments se mette à
+                            l'échelle, relativement à quelque chose d'autre sur la page. La plupart des unités les plus
+                            utiles pour le développement web sont présentes dans le tableau qui suit.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units"
+                                target="_blank">MDN web docs</a></cite></p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle">À quoi correspond l'unité em ? Et la nouvelle unité rem ?
+                <span class="infobulle">Je crois que je perds du temps</span>
+            </h2>
+            <ul>
+                <li>
+                    <blockquote>
+                        <p><strong>L'unité <code>em</code> signifie «&nbsp;la taille de police de l'élément parent&nbsp;»</strong>
+                            pour ce qui concerne la typographie. Les éléments <a
+                                    href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/li"
+                                    target="_blank"><code>&lt;li&gt;</code></a> à l'intérieur de <a
+                                    href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul"
+                                    target="_blank"><code>&lt;ul&gt;</code></a> et qui ont un attribut
+                            <code>class</code> avec <code>ems</code> prendront donc leur taille en fonction de celle de
+                            leur parent. Aussi, chaque niveau plus grand que le précédent, car chacun a une taille de
+                            police de <code>1.3em</code> soit 1,3 fois plus grand que la taille de police pour l'élément
+                            parent.</p>
+                        <p><strong>L'unité <code>rem</code> signifie «&nbsp;la taille de police de l'élément racine&nbsp;»</strong>
+                            (rem est l'acronyme anglais de «&nbsp;<i lang="en">root em</i>&nbsp;» qu'on pourrait
+                            traduire par «&nbsp;em racine&nbsp;».) Les éléments <a
+                                    href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/li"
+                                    target="_blank"><code>&lt;li&gt;</code></a> à l'intérieur de <a
+                                    href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul"
+                                    target="_blank"><code>&lt;ul&gt;</code></a> et qui ont un attribut
+                            <code>class</code> avec <code>rems</code> prendront leur taille à partir de l'élément racine
+                            (<code>&lt;html&gt;</code>). Cela signifie que les niveaux successifs ne gagneront pas en
+                            largeur.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units"
+                                target="_blank">MDN web docs</a></cite></p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle">Expliquez le principe des nouvelles unités vh et vw et leur intérêt.
+                <span class="infobulle">C'est long vous trouvez pas ?</span>
+            </h2>
+            <ul>
+                <li>
+                    <blockquote>
+                        <p>En CSS, on peut également utiliser des unités proportionnelles aux dimensions de la zone
+                            d'affichage.
+                            Un <code>vh</code> correspond à 1% de la hauteur de la zone d'affichage pour la disposition
+                            et <code>vw</code>
+                            mesurera, de façon analogue, 1% de la largeur de la zone d'affichage pour la disposition.
+                        </p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Viewport_concepts" target="_blank">MDN
+                        web docs</a></cite></p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle" id="Placement">Pourquoi DIV #1 est-il devant DIV #4, alors que son z-index est plus
+                faible
+                ?
+                <span class="infobulle">On y est presque !</span>
+            </h2>
+            <ul>
+                <li>
+                    <p><b>DIV #1</b>est devant <b>DIV #4</b> car <b>DIV #4</b> est un fils de <b>DIV #3</b>.<br/>
+                        <b>DIV #1</b> possède une position plus haute dans
+                        l'arborescence des DIV, il va donc être mis en avant, car <b>DIV #3</b> a pour
+                        <b>z-index 4</b> (et <b>DIV #1</b> a pour <b>z-index 5</b>)</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="infobulle" id="Complements_boites">Dans l'exemple précédent, que se passe-t-il si l'on supprime
+                la
+                bordure de <i>main</i> (en pointillés) ? Pourquoi ?
+                <span class="infobulle">Enfin, félicitation, on a rien gagné !</span>
+            </h2>
+            <ul>
+                <li>
+                    <p>Si on enlève la bordure du <code>main</code> la marge de l'element <b>DIV #A</b> et <b>DIV #B</b>,
+                        disparait parce qu'elle est absorbée par son parent qui a une marge de 0.<br/>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        if (document.querySelector('#drop-0:checked') !== null) {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active')
+            }
+        } else {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active2')
+            }
+        }
+    </script>
+</main>
+<footer>
+    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a> - 14/10/2021</p>
+</footer>
+</body>
+
+</html>

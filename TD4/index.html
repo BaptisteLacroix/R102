@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix">
+    <link rel="stylesheet" type="text/css" href="./css/td4.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/td.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Mon TD N°4 </title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="drop-0" class="toggle"><img id="iconeMenu" class="active active2" src="../img/menuIcon3.png"
+                                                        width="225" height="225" alt="Menu Icon"></label>
+                <a href="../index.html">Home</a>
+                <input type="checkbox" id="drop-0"/>
+                <ul class="menu1">
+                    <li>
+                        <label for="drop-1" class="toggle">TD0</label>
+                        <a href="../index.html">TD0</a>
+                        <input type="radio" id="drop-1" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../index.html#html">HTML et CSS</a></li>
+                            <li><a href="../index.html#listes">Sommaire</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2" class="toggle">TD1</label>
+                        <a href="../TD1/index.html">TD1</a>
+                        <input type="radio" id="drop-2" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD1/index.html#balisesTexte">URL et URI</a></li>
+                            <li><a href="../TD1/index.html#insertionImage">Les différents formats d'image sur le web</a>
+                            </li>
+                            <li><a href="../a_propos.html#creerLiens">Insertion d'une image</a></li>
+                            <li><a href="../index.html#listes">Les listes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3" class="toggle">TD2</label>
+                        <a href="../TD2/index.html">TD2</a>
+                        <input type="radio" id="drop-3" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD2/index.html#fonctionnementCSS">Fonctionnement de CSS</a></li>
+                            <li><a href="../TD2/index.html#famille">Noeuds Parents Fils</a></li>
+                            <li><a href="../TD2/index.html#selecteurs_avances">Sélecteurs avancés</a></li>
+                            <li><a href="../TD2/index.html#Regles_priorite">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4" class="toggle">TD3</label>
+                        <a href="../TD3/index.html">TD3</a>
+                        <input type="radio" id="drop-4" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD3/galerie.html">Galerie</a></li>
+                            <li><a href="../TD3/index.html#modele_de_boite">Le modèle de boîte</a></li>
+                            <li><a href="../TD3/index.html#Placement">Placement</a></li>
+                            <li><a href="../TD3/index.html#Complements_boites">Compléments sur les boîtes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-5" class="toggle">TD4</label>
+                        <a href="../TD4/index.html">TD4</a>
+                        <input type="radio" id="drop-5" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD4/index.html#tableaux">Les tableaux</a></li>
+                            <li><a href="../TD4/index.html#balises_multimedia">Les balises multimédia</a></li>
+                            <li><a href="../TD4/index.html#images_sectorisees">Les images sectorisées</a></li>
+                            <li><a href="../TD4/index.html#les_formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-6" class="toggle">TD5</label>
+                        <a href="../TD5/index.html">TD5</a>
+                        <input type="radio" id="drop-6" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/index.html#requetes">Réactivité : les requêtes media</a></li>
+                            <li><a href="../TD5/index.html#police">Mais que fait la police ?</a></li>
+                            <li><a href="../TD5/index.html#motifs">Dégradés et motifs</a></li>
+                            <li><a href="../TD5/index.html#transformations">Transformations et animations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-7" class="toggle">Voiture</label>
+                        <a href="../TD5/voiture.html">Voiture</a>
+                        <input type="radio" id="drop-7" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/voiture.html">Voiture</a></li>
+                            <li><a href="../TD5/voitureAnimee.html">Voiture Animée</a></li>
+                        </ul>
+                    </li>
+                    <li id="apropos">
+                        <label for="drop-8" class="toggle">&#192; Propos</label>
+                        <a href="../a_propos.html">&#192; Propos</a>
+                        <input type="radio" id="drop-8" name="menuResponsive"/>
+                        <ul class="menu2" id="apropos_sous_menu">
+                            <li><a href="../a_propos.html#creerLiens">Changer de type de boîte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="content">
+        <h1 id="tableaux">Les tableaux</h1>
+        <section>
+            <h2>Sans toucher au code HTML du tableau précédent, et sans utiliser d'identifiant ni de classe, modifiez la
+                feuille de styles CSS pour obtenir le formatage ci-dessous :</h2>
+
+            <table id="tableau1">
+                <!-- Légende  -->
+                <caption>
+                    Annuaire des membres
+                </caption>
+                <!-- Entête   -->
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Date de naissance</th>
+                    <th>Téléphone</th>
+                </tr>
+                </thead>
+                <!-- Corps du tableau  -->
+                <tbody>
+                <tr>
+                    <td>Martin</td>
+                    <td>Louis</td>
+                    <td>05/12/1960</td>
+                    <td>0610234578</td>
+                </tr>
+                <tr>
+                    <td>Le Douec</td>
+                    <td>Julie</td>
+                    <td>18/05/1975</td>
+                    <td>0610247013</td>
+                </tr>
+                <tr>
+                    <td>Jolivet</td>
+                    <td>Leo</td>
+                    <td>01/03/1982</td>
+                    <td>0745516021</td>
+                </tr>
+                <tr>
+                    <td>Merzougui</td>
+                    <td>Aïssa</td>
+                    <td>23/02/1962</td>
+                    <td>0685417844</td>
+                </tr>
+                <tr>
+                    <td>Pinto</td>
+                    <td>Jose</td>
+                    <td>18/11/1976</td>
+                    <td>0647814102</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Quelle est la différence entre ces pseudo-classes ?</h2>
+            <ol>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:first-child</code></strong>
+                            permet de cibler un élément qui est le premier élément fils par rapport à son élément
+                            parent.
+                        <p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:first-child" target="_blank">MDN
+                        web docs</a></cite></p>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:last-child</code></strong>
+                            permet de cibler un élément qui est le dernier enfant de son parent.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:last-child" target="_blank">MDN web
+                        docs</a></cite></p>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:nth-child(an+b)</code></strong>
+                            permet de cibler un élément qui possède an+b-1 éléments voisins (au même niveau) avant lui
+                            dans l'arbre du document pour des valeurs entières n et qui
+                            possède un élément parent. Autrement dit, un sélecteur utilisant cette pseudo-classe
+                            permettra de cibler les éléments fils d'un élément dont les positions
+                            correspondent au motif an+b.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child" target="_blank">MDN web
+                        docs</a></cite></p>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:first-of-type</code></strong>
+                            permet de cibler le premier élément d'un type donné parmi ceux d'un même élément parent (et
+                            de même niveau).</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:first-of-type" target="_blank">MDN
+                        web docs</a></cite></p>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:last-of-type</code></strong>
+                            cible un élément qui est le dernier enfant d'un type donné dans la liste des enfants de
+                            l'élément parent.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:last-of-type" target="_blank">MDN
+                        web docs</a></cite></p>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classe</a>
+                            <strong><code>:nth-of-type()</code></strong>
+                            correspond à des éléments d'un type donné, en fonction de leur position au sein d'un groupe
+                            de frères et sœurs.</p>
+                    </blockquote>
+                    <p><cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/:nth-of-type" target="_blank">MDN
+                        web docs</a></cite></p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>On considère le code HTML suivant :</h2>
+            <ol>
+                <li>
+            <pre><code>
+    &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;T&#xE2;ches &#x3C;em&#x3E;prioritaires&#x3C;/em&#x3E; du week-end :
+            &#x3C;ul&#x3E;
+                &#x3C;li&#x3E;arr&#xEA;ter le Joker ;&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;sauver le monde ;&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;racheter du dentifrice.&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Autres t&#xE2;ches : ...&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+            </code></pre>
+                </li>
+            </ol>
+            <h3>Quel serait l'effet de li ul:first-of-type {color: red;} ? Et de li ul:first-child {color: red;} ?</h3>
+            <ol>
+                <li>
+                    <pre>
+                    <code>
+    li ul:first-of-type {
+        color: red;
+    }
+    -> Colore la sous-liste en rouge.
+
+    li ul:first-child {
+        color: red;
+    }
+    -> Ne colore rien.
+                    </code>
+                        </pre>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Reproduisez ce tableau :</h2>
+
+            <img src="./img/tableauCouleurs.jpg" width="406" height="259" alt="tableau en couleur"/>
+            <br>
+
+            <table id="tableau2">
+                <tr>
+                    <td colspan="3" id="blue">300x50</td>
+                    <td rowspan="4" id="red">100x200</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2" id="beige">200x100</td>
+                    <td id="green">100x50</td>
+                </tr>
+                <tr>
+                    <td id="yellow">100x50</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" id="orange">100x100</td>
+                    <td rowspan="2" colspan="2" id="grey">200x100</td>
+                </tr>
+                <tr>
+                    <td id="purple">100x50</td>
+                </tr>
+            </table>
+            <br>
+
+            <h2 id="balises_multimedia">Testez l'insertion d'une vidéo extérieure avec ce lien, par exemple</h2>
+
+            <video autoplay controls
+                   src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4">
+            </video>
+            <br>
+        </section>
+        <section>
+            <h2 id="images_sectorisees">Les images sectorisées</h2>
+
+            <img id="imgIUT" src="./img/carte_IUT.png" alt="Carte de l'IUT de Nice" usemap="#image-map" class="cadre"/>
+            <map name="image-map">
+                <area target="_blank" alt="INFO" title="INFO"
+                      href="https://unice.fr/iut/contenus-riches/plaquettes-dut/dut-info"
+                      coords="181,523,255,361,175,323,100,485" shape="poly">
+                <area target="_blank" alt="GEA" title="GEA"
+                      href="https://unice.fr/iut/contenus-riches/plaquettes-dut/dut-gea"
+                      coords="296,468,406,224,495,263,382,506" shape="poly">
+                <area target="_blank" alt="GEII" title="GEII"
+                      href="https://unice.fr/iut/contenus-riches/plaquettes-dut/dut-geii"
+                      coords="723,311,687,386,910,491,951,415" shape="poly">
+                <area target="_blank" alt="TC" title="TC"
+                      href="https://unice.fr/iut/contenus-riches/plaquettes-dut/dut-tc-nice"
+                      coords="539,352,600,212,688,252,619,392" shape="poly">
+                <area target="_blank" alt="CROUS" title="CROUS"
+                      href="https://www.crous-nice.fr/restaurant/cafeteria-iut/?lang=fr"
+                      coords="514,556,467,625,608,720,655,649" shape="poly">
+            </map>
+        </section>
+        <section>
+            <h2 id="les_formulaires">Créez un formulaire semblable à celui-ci (les champs avec * sont requis).</h2>
+
+            <br>
+            <img src="./img/formulaire.png" width="387" height="459" alt="tableau en couleur"/>
+            <br>
+
+            <div id="formulaire">
+
+                <!-- La balise <form> sert à créer un formulaire -->
+                <form action="form.php" method="get">
+                    <div id="form_sans_bouton">
+                        <!-- La balise <fieldset> sert à regrouper plusieurs champs d'un formulaire -->
+                        <fieldset class="f1">
+                            <legend>Nom <abbr title="Ce Champ est obligatoire">(*)</abbr></legend>
+                            <label>
+                                <input class="infos" type="text" required>
+                            </label>
+                        </fieldset>
+                        <fieldset class="f1">
+                            <legend>Courriel <abbr title="Ce Champ est obligatoire">(*)</abbr></legend>
+                            <label>
+                                <input class="infos" type="email" name="Courriel" required>
+                            </label>
+                        </fieldset>
+                        <fieldset class="f1">
+                            <legend>Site web</legend>
+                            <label>
+                                <input class="infos" type="url" name="url">
+                            </label>
+                        </fieldset>
+                        <fieldset class="f1">
+                            <legend>Satisfaction <abbr title="Ce Champ est obligatoire">(*)</abbr></legend>
+                            <div class="slidercontainer">
+                                <div class="backgroundSlider">
+                                    <label>
+                                        <input class="slider" type="range" name="range">
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="f1">
+                            <legend>Commentaire <abbr title="Ce Champ est obligatoire">(*)</abbr></legend>
+                            <label>
+                                <textarea name="msg" maxlength="140" rows="5" required></textarea>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <button type="submit">Poster un commentaire</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/imageMapResizer.js"></script>
+    <script>
+        $('map').imageMapResize();
+    </script>
+    <script>
+        if (document.querySelector('#drop-0:checked') !== null) {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active')
+            }
+        } else {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active2')
+            }
+        }
+    </script>
+</main>
+<footer>
+    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a> - 14/10/2021</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix">
+    <link rel="stylesheet" type="text/css" href="css/td5.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/td.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Mon TD N°5 </title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="drop-0" class="toggle"><img id="iconeMenu" class="active active2" src="../img/menuIcon3.png"
+                                                        width="225" height="225" alt="Menu Icon"></label>
+                <a href="../index.html">Home</a>
+                <input type="checkbox" id="drop-0"/>
+                <ul class="menu1">
+                    <li>
+                        <label for="drop-1" class="toggle">TD0</label>
+                        <a href="../index.html">TD0</a>
+                        <input type="radio" id="drop-1" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../index.html#html">HTML et CSS</a></li>
+                            <li><a href="../index.html#listes">Sommaire</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2" class="toggle">TD1</label>
+                        <a href="../TD1/index.html">TD1</a>
+                        <input type="radio" id="drop-2" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD1/index.html#balisesTexte">URL et URI</a></li>
+                            <li><a href="../TD1/index.html#insertionImage">Les différents formats d'image sur le web</a>
+                            </li>
+                            <li><a href="../a_propos.html#creerLiens">Insertion d'une image</a></li>
+                            <li><a href="../index.html#listes">Les listes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3" class="toggle">TD2</label>
+                        <a href="../TD2/index.html">TD2</a>
+                        <input type="radio" id="drop-3" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD2/index.html#fonctionnementCSS">Fonctionnement de CSS</a></li>
+                            <li><a href="../TD2/index.html#famille">Noeuds Parents Fils</a></li>
+                            <li><a href="../TD2/index.html#selecteurs_avances">Sélecteurs avancés</a></li>
+                            <li><a href="../TD2/index.html#Regles_priorite">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4" class="toggle">TD3</label>
+                        <a href="../TD3/index.html">TD3</a>
+                        <input type="radio" id="drop-4" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD3/galerie.html">Galerie</a></li>
+                            <li><a href="../TD3/index.html#modele_de_boite">Le modèle de boîte</a></li>
+                            <li><a href="../TD3/index.html#Placement">Placement</a></li>
+                            <li><a href="../TD3/index.html#Complements_boites">Compléments sur les boîtes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-5" class="toggle">TD4</label>
+                        <a href="../TD4/index.html">TD4</a>
+                        <input type="radio" id="drop-5" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD4/index.html#tableaux">Les tableaux</a></li>
+                            <li><a href="../TD4/index.html#balises_multimedia">Les balises multimédia</a></li>
+                            <li><a href="../TD4/index.html#images_sectorisees">Les images sectorisées</a></li>
+                            <li><a href="../TD4/index.html#les_formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-6" class="toggle">TD5</label>
+                        <a href="../TD5/index.html">TD5</a>
+                        <input type="radio" id="drop-6" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/index.html#requetes">Réactivité : les requêtes media</a></li>
+                            <li><a href="../TD5/index.html#police">Mais que fait la police ?</a></li>
+                            <li><a href="../TD5/index.html#motifs">Dégradés et motifs</a></li>
+                            <li><a href="../TD5/index.html#transformations">Transformations et animations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-7" class="toggle">Voiture</label>
+                        <a href="../TD5/voiture.html">Voiture</a>
+                        <input type="radio" id="drop-7" name="menuResponsive"/>
+                        <ul class="menu2 AutresTD">
+                            <li><a href="../TD5/voiture.html">Voiture</a></li>
+                            <li><a href="../TD5/voitureAnimee.html">Voiture Animée</a></li>
+                        </ul>
+                    </li>
+                    <li id="apropos">
+                        <label for="drop-8" class="toggle">&#192; Propos</label>
+                        <a href="../a_propos.html">&#192; Propos</a>
+                        <input type="radio" id="drop-8" name="menuResponsive"/>
+                        <ul class="menu2" id="apropos_sous_menu">
+                            <li><a href="../a_propos.html#creerLiens">Changer de type de boîte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="content">
+        <h1 id="requetes">CSS: réactivité, animations et autres friandises</h1>
+        <section>
+            <h2>Réactivité : les requêtes media</h2>
+            <h3>1. Quelle requête média permet de sélectionner les supports ayant une résolution d'au moins 150dpi et
+                une hauteur d'écran comprise entre 500 et 800px, sauf si le ratio largeur/hauteur est inférieure à 16/9,
+                ou alors l'impression en mode paysage?</h3>
+            <ul>
+                <li>
+                    <p>@media screen and (min-width:150dpi) and ((min-height:500px) and (max-height:800px)) and
+                        (min-aspect-ratio:16/9) and (orientation:landscape)</p>
+                </li>
+            </ul>
+            <h3>2. Testez par vous-même en ouvrant cette page et en redimensionnant la fenêtre. Quelles stratégies ont
+                été
+                utilisées pour s'adapter ?</h3>
+            <ul>
+                <li>
+                    <p>les stratégies utilisées sont:
+                        <br>@media (max-width: 500px)
+                        <br>@media (max-width: 50em)
+                        <br>@media (max-width: 300px)
+                        <br>ainsi que <code>Flexbox</code>, <code>Grid</code> et les unités <code>em</code>,
+                        <code>vw</code> et <code>vh</code>.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="police">Mais que fait la police ?</h2>
+            <h3>1. Quelles familles de police sont utilisées sur cette page web, et où ?</h3>
+            <ul>
+                <li>
+                    <p>Les familles de polices utilisées sont Roboto dans le pour les a faire. <br>Ensuite la famille de
+                        police monospace dans les tables, avec la police sans-serif. <br>Ensuite la famille de police
+                        arciform, Calendas et Roboto sont utilisées dans les tires et le text en général, avec Calendas
+                        pour h1, dans les boites d'avertissement avec arciform et monospace dans les main i et b</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="motifs">Créez dans votre feuille td.css un motif de fond avec des rayures obliques et/ou des pois,
+                que
+                vous appliquerez à votre body de manière à ce qu'il s'affiche de part et d'autre du main. </h2>
+        </section>
+        <section>
+            <h2 id="transformations">Transformations et animations</h2>
+
+            <iframe src="./confidentiel.html" title="Confidentiel"></iframe>
+        </section>
+        <section>
+            <h2>Cette image a été créée uniquement avec du code HTML+CSS :</h2>
+
+            <iframe src="./voiture.html" title="Voiture"></iframe>
+        </section>
+        <section>
+            <h2>Animez le CSS suivant :</h2>
+
+            <iframe src="./montagneAnimee.html" title="Montagne Animée"></iframe>
+        </section>
+        <section>
+            <h2>Recréez l'animation suivante (sans regarder la solution !) :</h2>
+
+            <iframe src="./voitureAnimee.html" title="Voiture"></iframe>
+        </section>
+    </div>
+    <script>
+        if (document.querySelector('#drop-0:checked') !== null) {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active')
+            }
+        } else {
+            const clique = document.getElementById('iconeMenu');
+            clique.onclick = function () {
+                clique.classList.toggle('active2')
+            }
+        }
+    </script>
+</main>
+<footer>
+    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a> - 14/10/2021</p>
+</footer>
+</body>
+</html>

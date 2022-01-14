@@ -1,0 +1,61 @@
+/* Images */
+
+.galerie > img {
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 50%;
+}
+
+#oiseau {
+    clip-path: circle(25%);
+}
+
+#libellule {
+    border-radius: 50%;
+}
+
+#veau {
+    clip-path: url(#myPath)
+}
+
+#cabane {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+#grenouille {
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+#ecureuil {
+    clip-path: url(#myPath)
+}
+
+#poissons {
+    border-radius: 30%;
+}
+
+#voiture {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+#paysage1 {
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+}
+
+#paysage2 {
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+#animal {
+    clip-path: url(#myPath)
+}
+
+svg {
+    max-width: 0;
+    position: absolute;
+    overflow: hidden;
+}
